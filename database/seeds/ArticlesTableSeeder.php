@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class CarsTableSeeder extends Seeder
+class ArticlesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +11,6 @@ class CarsTableSeeder extends Seeder
      */
     public function run()
     {
-        factory('App\Car', 10)->create();
+        factory('App\Article', 10)->create();
     }
 }

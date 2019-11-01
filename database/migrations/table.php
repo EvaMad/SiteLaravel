@@ -5,4 +5,3 @@ Schema::create('cars', function (Blueprint $table) {
     $table->date('produced_on');
     $table->timestamps();
   });
-  
