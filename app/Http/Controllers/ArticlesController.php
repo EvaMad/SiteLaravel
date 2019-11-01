@@ -85,6 +85,3 @@ class ArticlesController extends Controller
     }
 }
 
-/**
- * bonsoir je mappelle eva
- */
