@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Car {{ $car->id }}</title>
+
+    <title>Article {{ $article->id }}</title>
+
   </head>
   <body>
-    <h1>Car {{ $car->id }}</h1>
+
+    <h1>Article {{ $article->id }}</h1>
+    
     <ul>
-      <li>Make: {{ $car->make }}</li>
-      <li>Model: {{ $car->model }}</li>
-      <li>Produced on: {{ $car->produced_on }}</li>
+      <li>Name: {{ $article->make }}</li>
+      <li>Price: {{ $article->model }}</li>
+      <a href="/articles/{{ $article->id }}/delete"> delete </a>
     </ul>
+
   </body>
 </html>

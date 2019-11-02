@@ -19,4 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('cars', 'CarController');
+Route::resource('articles', 'ArticlesController');
+
+Route::get('/articles/{id}/show', 'ArticlesController@show')->where('id', '[0-9]+');
+Route::get('/articles/{id}/delete', 'ArticlesController@destroy')->where('id', '[0-9]+');
